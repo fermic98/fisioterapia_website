@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="it">
-      <body className="bg-gray-50 text-gray-800 font-sans">
+      <body className="bg-gray-50 text-gray-800 font-sans min-h-screen">
         {/* Header responsive */}
         <header className="absolute top-0 left-0 w-full z-20">
           <nav className="container mx-auto flex flex-wrap items-center justify-between p-4">
@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
 
-        {/* Main content con padding responsive */}
-        <main className="container mx-auto my-8 px-4 sm:px-6 md:px-8">
+        {/* Main content without constraining padding for fullscreen pages */}
+        <main className="w-full">
           {children}
         </main>
 
