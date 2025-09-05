@@ -2,18 +2,19 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Studio di Fisioterapia",
-  description: "Sito ufficiale del tuo studio di fisioterapia",
+  title: "Body Revival",
+  description: "Sito ufficiale di Body Revival, approfondimenti sul corpo umano",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body className="bg-gray-50 text-gray-800 font-sans">
-        <header className="bg-blue-600 text-white p-4 shadow-md">
-          <nav className="container mx-auto flex justify-between">
-            <h1 className="font-bold text-xl">Fisioterapia Studio</h1>
-            <ul className="flex space-x-4">
+        {/* Header responsive */}
+        <header className="absolute top-0 left-0 w-full z-20">
+          <nav className="container mx-auto flex flex-wrap items-center justify-between p-4">
+            <h1 className="font-bold text-xl">Body Revival</h1>
+            <ul className="flex flex-wrap space-x-4 mt-2 sm:mt-0">
               <li><a href="/" className="hover:underline">Home</a></li>
               <li><a href="/servizi" className="hover:underline">Servizi</a></li>
               <li><a href="/modelli-3d" className="hover:underline">Modelli 3D</a></li>
@@ -22,12 +23,14 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
 
-        <main className="container mx-auto my-8">
+        {/* Main content con padding responsive */}
+        <main className="container mx-auto my-8 px-4 sm:px-6 md:px-8">
           {children}
         </main>
 
-        <footer className="bg-gray-200 text-gray-700 p-4 mt-8 text-center">
-          © 2025 Studio di Fisioterapia. Tutti i diritti riservati.
+        {/* Footer responsive */}
+        <footer className="bg-gray-200 text-gray-700 p-4 px-4 sm:px-6 mt-8 text-center">
+          © 2025 Body Revival. Tutti i diritti riservati.
         </footer>
       </body>
     </html>
