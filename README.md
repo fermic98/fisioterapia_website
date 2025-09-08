@@ -2,7 +2,26 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+## Getting Started
+
+### Prerequisites
+
+1. Install Node.js and npm:
+   - Download and install from [nodejs.org](https://nodejs.org/)
+   - Verify installation with `node -v` and `npm -v` in Command Prompt
+
+### Installation
+
+Once Node.js and npm are installed, install the project dependencies:
+
+```bash
+# Install Next.js and React
+npm install next@latest react@latest react-dom@latest
+
+# Install Tailwind CSS and its dependencies
+npm install -D tailwindcss postcss autoprefixer
+
+Run the development server:
 
 ```bash
 npm run dev
