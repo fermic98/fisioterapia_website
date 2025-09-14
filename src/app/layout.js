@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
             <ul className="flex flex-wrap space-x-4 mt-2 sm:mt-0">
               <li><a href="/" className="hover:underline">Home</a></li>
               <li><a href="/servizi" className="hover:underline">Servizi</a></li>
-              <li><a href="/modelli-3d" className="hover:underline">Modelli 3D</a></li>
-              <li><a href="/contatti" className="hover:underline">Contatti</a></li>
+              <li><a href="/corpo-umano-in-movimento" className="hover:underline">Corpo umano in movimento</a></li>
+              <li><a href="/chi-sono" className="hover:underline">Chi Sono</a></li>
             </ul>
           </nav>
         </header>
