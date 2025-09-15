@@ -1,5 +1,5 @@
-// src/app/layout.js
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Body Revival",
@@ -10,20 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body className="bg-gray-50 text-gray-800 font-sans min-h-screen">
-        {/* Header responsive */}
-        <header className="absolute top-0 left-0 w-full z-20">
-          <nav className="container mx-auto flex flex-wrap items-center justify-between p-4">
-            <h1 className="font-bold text-xl">Body Revival</h1>
-            <ul className="flex flex-wrap space-x-4 mt-2 sm:mt-0">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/servizi" className="hover:underline">Servizi</a></li>
-              <li><a href="/corpo-umano-in-movimento" className="hover:underline">Corpo umano in movimento</a></li>
-              <li><a href="/chi-sono" className="hover:underline">Chi Sono</a></li>
-            </ul>
-          </nav>
-        </header>
+        {/* Navbar con burger menu */}
+        <Navbar />
 
-        {/* Main content without constraining padding for fullscreen pages */}
+        {/* Main content senza padding-top */}
         <main className="w-full">
           {children}
         </main>
